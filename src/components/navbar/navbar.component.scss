@@ -1,0 +1,32 @@
+@import "../../_variables.scss";
+
+.navbar{
+    height:50px;
+    display:flex;
+    align-items:center;
+
+    .logo{
+        text-transform:uppercase;
+        font-weight:bold;
+    }
+
+    a{
+        color:$primary-color;
+    }
+
+    .signup-link{
+        padding:8px 20px;
+        background:$primary-color;
+        margin-left:10px;
+        color:white;
+        border-radius:7px;
+    }
+
+    div{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width:90%;
+        margin:auto;   
+    }
+}
