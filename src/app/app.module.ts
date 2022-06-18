@@ -5,6 +5,7 @@ import { AppRoutingModule, RoutesAndComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreatewalletComponent } from './createwallet/createwallet.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { LoginComponent } from './login/login.component';
     RoutesAndComponents,
     CreatewalletComponent,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

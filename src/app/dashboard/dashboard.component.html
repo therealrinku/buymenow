@@ -1,0 +1,24 @@
+<main class="dashboard-page container">
+    <div class="dashboard mt-5">
+        <h5>My Portfolio</h5>
+        <p>Total Balance: $1040</p>
+
+        <table>
+            <thead>
+                <th>Asset Name</th>
+                <th>Holdings</th>
+                <th>Price Per Coin</th>
+                <th>Total Value</th>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let asset of assets">
+                    <td>{{asset.assetName}}</td>
+                    <td>{{asset.holdings}}</td>
+                    <td>{{asset.pricePerCoin}}</td>
+                    <td>{{asset.pricePerCoin * asset.holdings}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>

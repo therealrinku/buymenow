@@ -3,9 +3,12 @@
     <section>
         <a routerLink="/" class="logo">buymenow</a>
     </section>
-    <section>
+    <section *ngIf="!loggedInPassphrase">
         <a routerLink="/login">Login</a>
         <a routerLink="/create-wallet" class="signup-link button">Create my wallet</a>
+    </section>
+    <section *ngIf="loggedInPassphrase">
+        <button class="signup-link button" (click)="logout()">Logout</button>
     </section>
 </div>
 </div>
