@@ -1,0 +1,36 @@
+<style>
+    .login-page{}
+    .login-page input,
+    .login-page button{
+        border:solid 1px rgba(0,0,0,0.5);
+        border-radius:5px;
+        padding:5px 20px;
+        height:40px;
+        outline: none;
+    }
+
+    .login-page input{
+        padding: 5px 10px;
+        min-width:300px;
+    }
+
+    .login-page button{
+        font-size:20px;
+        background:inherit;
+        vertical-align:middle;
+        margin-top:-5px;
+    }
+
+</style>
+
+<main class="login-page container pt-5">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+        <h3>Login to your wallet</h3>
+        <hr/>
+        <form class="mt-2" (ngSubmit)="login()"  [formGroup]="loginForm">
+            <input type="password" placeholder="Enter your password" formControlName="password"/>
+            <button class="mx-2">></button>
+            <p class="text-danger">{{errorString}}</p>
+        </form>
+    </div>
+</main>

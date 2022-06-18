@@ -27,6 +27,7 @@ export class CreatewalletComponent {
 
   copyPassword(){
     navigator.clipboard.writeText(this.randomPassword)
+    localStorage.setItem("password",this.randomPassword)
     this.copiedToClipboard=true
   }
 }
